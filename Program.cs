@@ -4,7 +4,10 @@ public class Vector
 {
 
     int max = 0;
-    public class Peroana
+    string FNameMax, LNameMax;
+    Date YearMax;
+    int AgeMax;
+    public class Persoana
     {
         string FirstName, LastName;
         Console.Write("Input a FirstName: ");
@@ -13,10 +16,24 @@ public class Vector
             LastName = Console.ReadLine();
         DateTime YearOfBirth;
         YearOfBirth = Console.ReadLine();
+        YearOfBirth = Console.ReadLine();
         int Age;
         Age = DateTime.Now.Year - YearOfBirth;
-        if (Age > max) max = Age;
     }
-
+    static void PersonProcessor
+        {
+            if (Age > max)
+            {
+                max = Age;
+                FNameMax = FirstNane;
+                LNameMax = LastName;
+                YearMax = YearOfBirth;
+                AgeMax = Age;
+            }
+    }
+    Console.Write(FNameMax);
+    Console.Write(LNameMax);
+    Console.Write(YearMax);
+    Console.log(AgeMax);
 }
 
